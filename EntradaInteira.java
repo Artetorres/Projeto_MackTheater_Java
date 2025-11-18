@@ -1,4 +1,12 @@
 public class EntradaInteira extends Entrada {
-    private int numeroDoAssento;
+    
+    public EntradaInteira(Espetaculo e, int n) {
+        super(e, n);
+    }
 
+    @Override
+    public double calculaValor() {
+       
+        return espetaculo.getPreco();
+    }
 }
